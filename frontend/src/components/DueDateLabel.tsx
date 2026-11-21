@@ -1,0 +1,1 @@
+export default function DueDateLabel({dueDate}:{dueDate?:string}){if(!dueDate)return <span>No due date</span>;const overdue=!Number.isNaN(Date.parse(dueDate))&&new Date(dueDate)<new Date();return <span className={overdue?'overdue':''}>{dueDate}{overdue?' · Overdue':''}</span>}

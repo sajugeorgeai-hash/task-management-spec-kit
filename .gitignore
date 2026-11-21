@@ -1,0 +1,14 @@
+backend/target/
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/.vite/
+frontend/tsconfig.tsbuildinfo
+.env
+.env.*
+*.log
+*.class
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

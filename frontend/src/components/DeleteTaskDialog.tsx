@@ -1,0 +1,2 @@
+import type {TaskItem} from '../services/taskTypes'
+export default function DeleteTaskDialog({task,onConfirm,onClose}:{task:TaskItem;onConfirm:()=>void;onClose:()=>void}){return <div className="modal-backdrop"><div className="modal confirm"><h2>Delete task?</h2><p>“{task.title}” will be permanently removed.</p><div className="modal-actions"><button className="secondary" onClick={onClose}>Cancel</button><button className="danger" onClick={onConfirm}>Delete</button></div></div></div>}
